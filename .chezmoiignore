@@ -1,0 +1,16 @@
+# Chezmoi Ignore File
+# https://www.chezmoi.io/reference/special-files-and-directories/chezmoiignore/
+
+# Files to ignore on all machines
+README.md
+LICENSE
+
+# Example: Ignore on Linux only
+# {{ if eq .chezmoi.os "linux" }}
+# dot_config/mac-only-app/
+# {{ end }}
+
+# Example: Ignore on Mac only
+# {{ if eq .chezmoi.os "darwin" }}
+# dot_config/linux-only-app/
+# {{ end }}
